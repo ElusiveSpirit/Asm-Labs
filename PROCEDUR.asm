@@ -56,7 +56,7 @@ CLRF proc
         ClearLine db 0Dh, 0Ah, '$'
 CLRF endp
 
-; Переход на следующую строку с использованием прерывания DOS.
+; Очистка экрана.
 CLS proc
         push ax
         mov ax, 03h
