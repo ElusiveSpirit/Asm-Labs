@@ -44,7 +44,10 @@ Skip_Change:
         xchg al, ch
         xchg ah, ch
 
+        push dx
         call HEX                  ; Тёрки вокруг числа в AL
+        mov bx, dx
+        pop dx
         xchg ah, ch
         xor ch, ch
         add dh, 3

@@ -20,7 +20,7 @@ Main_Loop:
 
         mov ah, 0                 ; Если AH не будет = 0, то и его переведёт
         call HEX                  ;\
-        mov dx, bx                ; > Тёрки вокруг числа в AL
+                                  ; > Тёрки вокруг числа в AL
         call WRITE_LINE           ;/
 
         call CLRF                 ; Следующая строка
